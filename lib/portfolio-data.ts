@@ -34,7 +34,7 @@ export const navLinks = [
 export const quickStats = [
   { label: 'Years Learning', value: 4, suffix: '+' },
   { label: 'Projects Built', value: 6, suffix: '+' },
-  { label: 'Certifications', value: 5, suffix: '' },
+  { label: 'Certifications', value: 4, suffix: '' },
   { label: 'GATE 2026 Score', value: 289, suffix: '' },
 ]
 
@@ -50,6 +50,12 @@ export const education = [
     org: 'Govt Polytechnic College, Simhadripuram, Kadapa',
     period: 'Oct 2021 – May 2024',
     score: 'CGPA 8.66',
+  },
+  {
+    degree: 'Secondary School Certificate (SSC)',
+    org: 'Sri Vignan Vidyanikethan High School, Yerraguntla',
+    period: '2021',
+    score: 'CGPA 9.5 / 10',
   },
 ]
 
@@ -178,7 +184,7 @@ export const certifications = [
 export const achievements = [
   {
     title: 'GATE 2026 Qualified',
-    detail: 'Secured a GATE Score of 289 in Computer Science & Engineering (CSE).',
+    detail: 'Qualified GATE 2026 in Computer Science & Information Technology (CS & IT) with a GATE Score of 289.',
     highlight: 'Score 289',
   },
   {
