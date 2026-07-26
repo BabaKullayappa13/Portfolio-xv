@@ -51,12 +51,6 @@ export const education = [
     period: 'Oct 2021 – May 2024',
     score: 'CGPA 8.66',
   },
-  {
-    degree: 'Secondary School Certificate (SSC)',
-    org: 'Sri Vignan Vidyanikethan High School, Yerraguntla',
-    period: '2021',
-    score: 'CGPA 9.5 / 10',
-  },
 ]
 
 export const skillCategories = [
