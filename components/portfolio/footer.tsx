@@ -63,8 +63,7 @@ export function Footer() {
         </div>
 
         <div className="mt-10 border-t border-border pt-6 text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Moyeellacheruvu Baba Kullayappa. Built with Next.js
-          &amp; Tailwind CSS.
+          © {new Date().getFullYear()} All Rights Reserved . M Baba Kullayappa
         </div>
       </div>
 
