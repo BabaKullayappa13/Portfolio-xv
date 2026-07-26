@@ -1,9 +1,21 @@
+'use client'
+
 import { Award, ExternalLink, ShieldCheck } from 'lucide-react'
+import { useState } from 'react'
 import { certifications } from '@/lib/portfolio-data'
 import { Reveal } from './reveal'
 import { SectionHeading } from './section-heading'
 
 export function Certifications() {
+  const [loading, setLoading] = useState<string | null>(null)
+
+  const handleViewCertificate = (link: string | undefined) => {
+    if (!link) return
+    setLoading(link)
+    window.open(link, '_blank')
+    setTimeout(() => setLoading(null), 1000)
+  }
+
   return (
     <section id="certificates" className="px-4 py-24 sm:px-6">
       <div className="mx-auto max-w-6xl">
@@ -30,13 +42,16 @@ export function Certifications() {
                 {cert.title}
               </h3>
               <p className="mt-1 text-sm text-muted-foreground">{cert.issuer}</p>
-              <a
-                href="#"
-                className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-brand-cyan transition-colors group-hover:text-foreground"
-              >
-                View Certificate
-                <ExternalLink className="h-3.5 w-3.5" />
-              </a>
+              {cert.link && (
+                <button
+                  onClick={() => handleViewCertificate(cert.link)}
+                  disabled={loading === cert.link}
+                  className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-brand-cyan transition-colors hover:text-foreground disabled:opacity-50"
+                >
+                  {loading === cert.link ? 'Opening...' : 'View Certificate'}
+                  <ExternalLink className="h-3.5 w-3.5" />
+                </button>
+              )}
             </Reveal>
           ))}
         </div>

@@ -160,6 +160,22 @@
   }
 }
 
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px) rotateZ(0deg);
+  }
+  25% {
+    transform: translateY(-12px) rotateZ(1deg);
+  }
+  50% {
+    transform: translateY(-8px) rotateZ(-1deg);
+  }
+  75% {
+    transform: translateY(-10px) rotateZ(0.5deg);
+  }
+}
+
 @keyframes marquee {
   from {
     transform: translateX(0);

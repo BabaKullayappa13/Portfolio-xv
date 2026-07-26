@@ -5,8 +5,8 @@ export const profile = {
   location: 'Nandyal, Andhra Pradesh, India',
   email: 'mbabakullayappa776@gmail.com',
   phone: '+91 7671078039',
-  github: 'https://github.com/',
-  linkedin: 'https://www.linkedin.com/',
+  github: 'https://github.com/BabaKullayappa13',
+  linkedin: 'https://www.linkedin.com/in/baba-kullayappa-m-915163378',
   resume: '/kullayappa-resume.pdf',
   roles: [
     'Full Stack Developer',
@@ -156,18 +156,22 @@ export const certifications = [
   {
     title: 'AWS Certified Cloud Practitioner',
     issuer: 'Amazon Web Services',
+    link: 'https://drive.google.com/file/d/1WPinXb8jK1mW-tajq9bKQW1XnUtoIwyh/view?usp=drivesdk',
   },
   {
-    title: 'Full Stack Development (MERN)',
-    issuer: 'Certification Program',
+    title: 'SmartInternz Internship Certificate',
+    issuer: 'SmartInternz',
+    link: 'https://drive.google.com/file/d/155oTn1_LTZgiFVUVkoNrkBsRgZtGvb1L/view?usp=drivesdk',
   },
   {
     title: 'Zscaler Zero Trust Associate (ZTCA)',
     issuer: 'Zscaler',
+    link: 'https://drive.google.com/file/d/1plNEmcXxoCGhx1v8rfEoLUVUTdrmITE1/view?usp=drivesdk',
   },
   {
     title: 'NPTEL Elite — Internet of Things (IoT)',
     issuer: 'NPTEL',
+    link: 'https://drive.google.com/file/d/1kn_d0tkasWDHxsZnSmKQ1Arn_-XE7sux/view?usp=drivesdk',
   },
 ]
 

@@ -105,29 +105,42 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Visual */}
-        <div className="relative mx-auto w-full max-w-sm">
-          <div className="absolute inset-0 -z-10 rounded-[2rem] bg-gradient-to-br from-brand-blue/30 via-brand-cyan/20 to-brand-purple/30 blur-2xl" />
-          <div className="glass overflow-hidden rounded-[2rem] p-3">
-            <div className="overflow-hidden rounded-[1.5rem]">
+        {/* Visual - Circular Profile Photo */}
+        <div className="relative mx-auto flex justify-center lg:justify-end">
+          {/* Glow effect background */}
+          <div className="absolute inset-0 -z-10 rounded-full bg-gradient-to-br from-brand-blue/40 via-brand-cyan/30 to-brand-purple/40 blur-3xl" />
+          
+          {/* Circular profile container */}
+          <div className="relative h-72 w-72 sm:h-80 sm:w-80">
+            {/* Blue glow border */}
+            <div className="absolute inset-0 animate-pulse rounded-full border-2 border-brand-blue/50 shadow-2xl shadow-brand-blue/30" />
+            
+            {/* Floating animation wrapper */}
+            <div className="absolute inset-0 rounded-full border border-brand-cyan/30" style={{
+              animation: 'float 6s ease-in-out infinite'
+            }} />
+            
+            {/* Profile image */}
+            <div className="h-full w-full overflow-hidden rounded-full shadow-2xl shadow-brand-blue/40">
               <Image
-                src="/hero-avatar.png"
-                alt="Abstract developer avatar illustration"
-                width={640}
-                height={640}
+                src="/profile.jpg"
+                alt="Moyeellacheruvu Baba Kullayappa - Professional Profile Photo"
+                width={320}
+                height={320}
                 priority
-                className="h-auto w-full object-cover"
+                className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
               />
             </div>
-          </div>
-
-          <div className="absolute -bottom-5 -left-5 rounded-2xl glass px-4 py-3 text-center shadow-xl">
-            <p className="font-heading text-xl font-bold text-gradient">289</p>
-            <p className="text-[11px] text-muted-foreground">GATE 2026</p>
-          </div>
-          <div className="absolute -right-4 top-8 rounded-2xl glass px-4 py-3 text-center shadow-xl">
-            <p className="font-heading text-xl font-bold text-gradient">AWS</p>
-            <p className="text-[11px] text-muted-foreground">Cloud Practitioner</p>
+            
+            {/* Floating stat badges */}
+            <div className="absolute -bottom-4 -left-6 animate-bounce rounded-2xl glass px-3 py-2 text-center shadow-xl" style={{ animationDelay: '0.2s' }}>
+              <p className="font-heading text-lg font-bold text-gradient">289</p>
+              <p className="text-[10px] text-muted-foreground">GATE 2026</p>
+            </div>
+            <div className="absolute -right-6 top-12 animate-bounce rounded-2xl glass px-3 py-2 text-center shadow-xl" style={{ animationDelay: '0.4s' }}>
+              <p className="font-heading text-lg font-bold text-gradient">AWS</p>
+              <p className="text-[10px] text-muted-foreground">Cloud</p>
+            </div>
           </div>
         </div>
       </div>
